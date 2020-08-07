@@ -21,9 +21,9 @@ console.log(listItemThird);
 
 
 // Give the section with an id of container the text “Hello!”.
-    const h1 = document.createElement('h1');
-    h1.innerText = "Hello!";
-    idSelector.prepend(h1);
+    const container = document.querySelector('#container');
+    container.innerText = "Hello!"
+
 
 // Add the class main to the div with a class of footer.
     const main = document.querySelector('.footer');
@@ -44,7 +44,7 @@ console.log(listItemThird);
     ul.append(newLi);
 
 // Loop over all of the lis inside the ol tag and give them a background color of “green”.
-    const ol = document.querySelectorAll('ol');
+    const ol = document.querySelectorAll('ol li');
 
     for(let ols of ol) {
         ols.style.color = "green";
@@ -56,5 +56,5 @@ console.log(listItemThird);
     // })
 
 // Remove the div with a class of footer
-   main.remove()
+   main.remove();
    
